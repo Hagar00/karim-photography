@@ -11,9 +11,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Inter", sans-serif;
-  --font-secondary: "Cardo", sans-serif;
+  --font-default: "Poppins, sans-serif";
+  /* --font-primary: "Inter", sans-serif;
+  --font-secondary: "Cardo", sans-serif; */
 }
 
 /* Colors */
@@ -89,8 +89,13 @@ h6 {
 carousel start
 -------------------------------------------- */
 .slides_imgs {
-  width: 60vh;
+  width: 80vh;
   height: auto;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 
 .slides_content {
@@ -119,7 +124,7 @@ carousel start
   font-size: 56px;
   font-weight: 500;
   color: var(--color-default);
-  font-family: var(--font-secondary);
+  font-family: var(--font-default);
 }
 
 @media (max-width: 768px) {
@@ -133,7 +138,7 @@ carousel start
 }
  .cta-btn
  {
-  font-family: var(--font-primary);
+  font-family: var(--font-default);
   font-weight: 400;
   font-size: 14px;
   display: inline-block;
@@ -159,12 +164,16 @@ carousel start
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 70px;
+  bottom: 100px;
   z-index: 99999;
   background: var(--color-primary);
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
   transition: all 0.4s;
 }
 
@@ -177,14 +186,19 @@ carousel start
 .scroll-top:hover {
   background: var(--color-secondary);
   color: #fff;
+  border: 1px solid var(--color-primary);
 }
 
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
-  bottom: 15px;
+  bottom: 62px;
 }
-
+@media screen and (max-width: 767px) {
+  .scroll-top.active{
+    bottom: 83px;
+  }
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -350,7 +364,7 @@ carousel start
   margin: 0;
   font-weight: 400;
   color: #fff;
-  font-family: var(--font-secondary);
+  font-family: var(--font-default);
 }
 
 @media (max-width: 575px) {
@@ -479,7 +493,7 @@ carousel start
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    font-family: var(--font-primary);
+    font-family: var(--font-default);
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 400;
@@ -681,6 +695,7 @@ carousel start
     transform: scale(1.12);
   }
 }
+
 /*--------------------------------------------------------------
 # Gallery Single Section
 --------------------------------------------------------------*/
@@ -982,7 +997,7 @@ carousel start
   font-size: 38px;
   font-weight: 700;
   color: #fff;
-  font-family: var(--font-secondary);
+  font-family: var(--font-default);
 }
 
 .hero h2 span {
@@ -1010,7 +1025,7 @@ carousel start
 }
 
 .hero .btn-get-started {
-  font-family: var(--font-primary);
+  font-family: var(--font-default);
   font-weight: 400;
   font-size: 14px;
   display: inline-block;
@@ -1053,7 +1068,7 @@ carousel start
 }
 .custom-logo-caption-footer{
   color: #fff;
-  font-family: var(--font-secondary);
+  font-family: var(--font-default);
   padding-left: 5px;
 }
 .footer .credits a {
@@ -1074,5 +1089,93 @@ carousel start
 
 /***********************************/
 
-
+    /* ******************************************/
+    .slider-three-subscribe {
+      position: relative;
+    }
+  
+    .subscribe-content {
+      padding-top: 5%;
+  
+    }
+  
+    .subscribe-left {
+      z-index: 99;
+    }
+  
+    .subscribe-left img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+}
+  
+    .subscribe-content-left {
+      padding-top: 10%;
+    }
+  
+    .top-subscribe .h-one,
+    .top-subscribe .h-two {
+      font-size: 35px;
+      font-family: var(--font-default);
+      color: var(--color-primary);
+      text-transform: capitalize;
+    }
+  
+    .top-subscribe .h-two {
+      text-align: center;
+    }
+  
+    .end-subscribe {
+      padding-top: 4%;
+      z-index: 99;
+    }
+  
+    .group-input input {
+      width: 50%;
+      height: 47px;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+      border: none;
+      margin-right: -45px;
+      padding-right: 55px;
+      padding-left: 12px;
+      outline: none;
+    }
+  
+    ::-webkit-input-placeholder,
+    ::placeholder,
+    .group-input button {
+      text-transform: capitalize;
+      font-size: 18px;
+    }
+  
+    .group-input button {
+      width: 35%;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+      border: none;
+      background-color: var(--color-primary);
+      color: var(--color-default);
+      font-size: 20px;
+      padding-top: 7px;
+      padding-bottom: 10px;
+    }
+  
+    .group-input button:hover {
+      transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+    }
 
