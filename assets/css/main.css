@@ -1,14 +1,4 @@
-/**
-* Template Name: PhotoFolio - v1.1.1
-* Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Set main reusable colors and fonts using CSS variables
-# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --font-default: "Poppins, sans-serif";
@@ -1179,3 +1169,32 @@ carousel start
       -o-transform: scale(1.05);
     }
 
+/* ******************** gallery icon ************************ */
+.img-container{
+  position: relative;
+}
+.image {
+  opacity: 1;
+  display: block;
+  /* width: 100%; */
+  /* height: auto; */
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.img-container:hover .image {
+  opacity: 0.3;
+}
+
+.img-container:hover .middle {
+  opacity: 1;
+}
