@@ -61,7 +61,6 @@ h6 {
 ----------------------------------------- */
 .cover-img img{
   width: 100%;
-  /* max-width: 520px; */
 }
 @media screen and (max-width: 567px) {
   .cover {
@@ -1104,7 +1103,7 @@ carousel start
 }
   
     .subscribe-content-left {
-      padding-top: 10%;
+      padding-top: 3%;
     }
   
     .top-subscribe .h-one,
@@ -1120,24 +1119,24 @@ carousel start
     }
   
     .end-subscribe {
-      padding-top: 4%;
+    margin-top: 3%;
       z-index: 99;
     }
   
     .group-input input {
-      width: 50%;
+      width: 70%;
       height: 47px;
-      border-radius: 25px;
-      -webkit-border-radius: 25px;
-      -moz-border-radius: 25px;
-      -ms-border-radius: 25px;
-      -o-border-radius: 25px;
       border: none;
-      margin-right: -45px;
-      padding-right: 55px;
+      border-bottom: var(--color-primary) 2px solid;
+      margin-left: 15%;
+      margin-bottom: 15px;
+      padding-right: 10px;
       padding-left: 12px;
       outline: none;
-    }
+      display: block;
+      background-color: transparent;
+      color: var(--color-primary);
+}
   
     ::-webkit-input-placeholder,
     ::placeholder,
@@ -1148,18 +1147,19 @@ carousel start
   
     .group-input button {
       width: 35%;
-      border-radius: 25px;
-      -webkit-border-radius: 25px;
-      -moz-border-radius: 25px;
-      -ms-border-radius: 25px;
-      -o-border-radius: 25px;
       border: none;
       background-color: var(--color-primary);
       color: var(--color-default);
       font-size: 20px;
       padding-top: 7px;
       padding-bottom: 10px;
-    }
+      display: block;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+}
   
     .group-input button:hover {
       transform: scale(1.05);
