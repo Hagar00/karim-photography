@@ -79,8 +79,8 @@ h6 {
 carousel start
 -------------------------------------------- */
 .slides_imgs {
-  width: 80vh;
-  height: auto;
+  /* width: 100%; */
+  /* height: auto; */
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
