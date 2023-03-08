@@ -1180,7 +1180,23 @@ carousel start
     font-size: 32px;
   }
 }
-
+.whats{
+  width: 30%;
+  margin: auto;
+  background-color: var(--color-primary);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width : 992px) and (min-width : 768px) {
+  .whats{
+    width : 45%;
+  }
+}
+@media screen and (max-width : 768px)  {
+  .whats {
+    width: 100%;
+  }
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
